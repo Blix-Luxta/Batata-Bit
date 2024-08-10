@@ -136,15 +136,11 @@ main{
     margin: 0 auto;
 }
 
-.main__exchange-container .backgroung-img{
+.main__exchange-container .background-img{
     width: 200px;
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-image: url("../assets/img/Bitcoin.svg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .main__exchange-container h2{
@@ -371,19 +367,24 @@ main{
     max-width: 100%;
     min-width: 320px;
     height: 70vh;
-    background-image: url("../assets/img/bitcoinbaby2x.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+}
+.bitcoin-img__container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
 
 }
 .bitcoin-img__container h2{
+    position: absolute;
+    z-index: 10;
+    left: calc(50% - 8rem);
     padding-top: 60px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
-    text-align: center;
 }
 
 .main-plans-container {
@@ -419,13 +420,14 @@ main{
 
 .plans-container--slider{
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     min-height: 316px;
     overflow-x: scroll;
     overscroll-behavior: contain;
     scroll-snap-type: x proximity;
     margin: 0 30px; 
     padding-bottom: 10px;
+    padding: 0 4.4rem 1rem 4.4rem;
 }
 
 .plans-container--card {
@@ -443,6 +445,12 @@ main{
 }
 
 
+/* .plans-container--slider .plans-container--card:nth-child(1){
+    margin-left: 4rem;
+}
+.plans-container--slider .plans-container--card:nth-child(3){
+    margin-right: 4rem;
+} */
 .recomended {
     position: absolute;
     width: 120px;
@@ -571,4 +579,11 @@ footer .left ul {
 .left a {
     text-decoration: none;
     color: var(--just-white);
+}
+
+.footer__logo img{
+    min-height: 24px;
+    min-width: 24px;
+    max-height: 64px;
+    max-width: 64px;
 }

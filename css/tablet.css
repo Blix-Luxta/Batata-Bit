@@ -37,6 +37,7 @@ header img{
 .plans-container--slider{
     scrollbar-width: none;
 }
+
 .exchange-container__title h2{
     font-size: 2.8rem;
 }
@@ -44,11 +45,13 @@ header img{
     text-align: center;
     font-size: 2.2rem;
     line-height: 2.5rem;
-
 }
 
+bitcoin-img__container{
+    height: 80vh;
+}
 .bitcoin-img__container h2{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .plan-info-container .plan-card--price{

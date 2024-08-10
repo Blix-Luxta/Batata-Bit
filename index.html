@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batatabit</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/img/Bitcoin.svg" type="image/svg+xml">
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/img/bitcoinbaby.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css" media="(min-width:320px)">
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
-
 </head>
     <body>
         <header>
@@ -19,8 +20,8 @@
         </header>
         <main class="main">
             <section class="main__exchange-container">
-                <div class="backgroung-img">
-
+                <div class="background-img">
+                    <img src="./assets/img/Bitcoin.svg" alt="Imagen de Bitcoin">
                 </div>
                 <div class="exchange-container__title">
                     <h2>Visibilizamos todas las tazas de cambio</h2>
@@ -127,6 +128,11 @@
             </section>
             <section class="bitcoin-img__container">
                 <h2>Conócelo hoy.</h2>
+                <picture>
+                    <source srcset="./assets/img/bitcoinbaby2x.png" media="(min-width: 700px)">
+                    <source srcset="./assets/img/bitcoinbaby.png">
+                    <img src="./assets/img/bitcoinbaby.png" alt="Bitcoin Baby">
+                </picture>
             </section>
             <section id="plans" class="main-plans-container">
                 <div class="plans--title">
@@ -174,7 +180,7 @@
                     <li><a href="#">Hackernews</a></li>
                 </ul>
             </section>
-            <section>
+            <section class="footer__logo">
                 <img src="./assets/img/logo-footer.svg" alt="Logo Batatabit">
             </section>
         </footer>
