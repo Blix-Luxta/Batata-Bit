@@ -59,3 +59,7 @@ El diseño se adapta automáticamente a diferentes dispositivos:
 1. **Clonar el Repositorio**: 
    ```bash
    git clone https://github.com/tuusuario/bitcoin-landing-page.git
+
+## Link
+
+Podés ver la pagina desde este link: [Batata-Bit](https://blix-luxta.github.io/Batata-Bit/)
